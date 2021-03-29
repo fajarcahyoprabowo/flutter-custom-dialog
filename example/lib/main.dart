@@ -274,8 +274,8 @@ Widget makeTextButton(title, Function() function) {
   return SizedBox(
     width: 70.0,
     height: 35.0,
-    child: RaisedButton(
-      padding: EdgeInsets.all(0.0),
+    child: ElevatedButton(
+      style: ButtonStyle(padding: MaterialStateProperty.all(EdgeInsets.all(0.0))),
       onPressed: () {
         function();
       },
